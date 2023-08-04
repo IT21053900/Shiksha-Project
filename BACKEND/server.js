@@ -24,6 +24,9 @@ connection.once("open",() =>{
     console.log("Mongodb Connection Success!");
 })
 
+//Student
+const studentRouter = require("./routes/students.js")
+app.use("/student",studentRouter);
 
 
 
